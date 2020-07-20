@@ -1,0 +1,76 @@
+
+<%
+   const page_name = "Gallary";
+%>
+
+<!-- Head content -->
+<%- include('common/_head', { page_name }) %>
+
+   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+      <div class="site-wrap" id="home-section">
+         <div class="site-mobile-menu site-navbar-target">
+            <div class="site-mobile-menu-header">
+               <div class="site-mobile-menu-close mt-3">
+                  <span class="icon-close2 js-menu-toggle"></span>
+               </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+         </div>
+
+         <!-- Header -->
+         <%- include('common/_header', { page_name }) %>
+
+         <div class="site-section bg-light counter" id="gallary-section">
+            <div class="container">
+               <div class="row mb-5 justify-content-center">
+                  <div class="col-md-7 text-center">
+                     <h2 class="text-black text-uppercase section-title">Gallary</h2>
+                     <p>Collection of our great moments</p>
+                  </div>
+               </div>
+               <div class="row mb-5">
+
+                  <% data.forEach((photo, index) => { %>
+                     <div class="col-md-6 col-lg-6 mb-6" data-aos="fade-up" data-aos-delay="<%= index * 100 %>">
+                        <div class="text-center">
+                           <img src="<%= photo.url %>" class="img-thumbnail" alt="<%= photo.title %>" /> 
+                        </div>
+                     </div>
+                  <% }) %>
+
+                  <!-- <div class="col-md-6 col-lg-6 mb-6" data-aos="fade-up" data-aos-delay="200">
+                     <div class=" text-center">
+                        <img src="./images/project-13/photos/9.jpg" class="img-thumbnail" alt="Cinque Terre" /> 
+                     </div>
+                  </div> -->
+
+                  <!-- <div class="col-md-6 col-lg-6 mb-6" data-aos="fade-up" data-aos-delay="300">
+                     <div class=" text-center">
+                        <img src="./images/project-13/photos/16.jpg" class="img-thumbnail" alt="Cinque Terre" /> 
+                     </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-6 mb-6 mt-4" data-aos="fade-up" data-aos-delay="400">
+                     <div class=" text-center">
+                        <img src="./images/project-13/photos/13.jpg" class="img-thumbnail" alt="Cinque Terre" /> 
+                     </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-6 mb-6 mt-4" data-aos="fade-up" data-aos-delay="500">
+                     <div class=" text-center">
+                        <img src="./images/project-21/photos/2.jpg" class="img-thumbnail" alt="Cinque Terre" /> 
+                     </div>
+                  </div> -->
+               </div>
+            </div>
+         </div>
+         
+         <!-- Footer -->
+         <%- include('common/_footer') %>
+
+      </div>
+   </body>
+   
+   <%- include('common/_js-imports') %>
+   
+</html>

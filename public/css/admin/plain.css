@@ -1,0 +1,33 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+
+    align-items: center;
+}
+
+header {
+    padding: 12px;
+}
+h1 {
+    font-weight: normal;
+    font-size: 3em;
+}
+h2 {
+    font-weight: normal;
+    font-size: 2em;
+}
+.text-blur {
+    color: #666;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: min-content;
+}
+header .logo {
+    padding: 0 12px;
+}

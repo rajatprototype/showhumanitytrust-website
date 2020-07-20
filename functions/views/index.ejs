@@ -1,0 +1,146 @@
+
+<%
+   const page_name = "Home";
+%>
+
+<!-- Head content -->
+<%- include('common/_head', { page_name }) %>
+
+   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+      <div class="site-wrap" id="home-section">
+         <div class="site-mobile-menu site-navbar-target">
+            <div class="site-mobile-menu-header">
+               <div class="site-mobile-menu-close mt-3">
+                  <span class="icon-close2 js-menu-toggle"></span>
+               </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+         </div>
+
+         <!-- Header -->
+         <%- include('common/_header', { page_name }) %>
+
+         <div class="owl-carousel slide-one-item">
+            <a href="#"><img src="./images/1.jpg" alt="Image" class="img-fluid" /></a>
+            <a href="#"><img src="./images/2.jpg" alt="Image" class="img-fluid" /></a>
+         </div>
+
+         <div class="d-block d-md-flex intro-engage">
+            <div class="">
+               <!-- <h2>Rescue An Orphan</h2> -->
+               <p>Our Vision is to identify, liberate, rehabilitate and develop the physically challenged persons from every strata of society through individual, group and community participation.</p>
+            </div>
+            <div>
+               <!-- <h2>Feed The Hungry</h2> -->
+               <p>We envision to grow our reach to many lives, providing comprehensive solutions to the specially abled persons.</p>
+            </div>
+            <div>
+               <!-- <h2>Free Education</h2> -->
+               <p>We aim at an inclusive society free from discrimination where persons with disabilities become contributing members, living with dignity and respect.</p>
+            </div>
+         </div>
+         <div class="site-section bg-image overlay counter" style="background-image: url('./images/2.jpg');" id="about-section">
+            <div class="container">
+               <div class="row mb-5">
+                  <div class="col-lg-6 mb-4">
+                     <figure class="block-img-video-1" data-aos="fade">
+                        <!-- <a href="https://youtu.be/HfRYy47o85Y" class="popup-vimeo"> -->
+                        <!-- <span class="icon"><span class="icon-play"></span></span> -->
+                        <!-- <img src="./images/thumb-1.png" alt="Image" class="img-fluid"> -->
+                        <iframe 
+                           width="100%" 
+                           height="315" 
+                           src="https://www.youtube.com/embed/HfRYy47o85Y" 
+                           frameborder="0" 
+                           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                           allowfullscreen></iframe>
+                        </a>
+                     </figure>
+                  </div>
+                  <div class="col-lg-5 ml-auto align-self-lg-center">
+                     <h2 class="text-black mb-4 text-uppercase section-title">Our Mission</h2>
+                     <p class="text-black">To tap talent from people with disabilities and utilise the skills and abilities they possess so as to enable them to integrate with the modern society.</p>
+                     <p class="text-black">Work as a catalyst in bringing sustainable change in the lives of the differently-abled adults and children with a life cycle approach to development.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         <div class="site-section">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6 col-lg-4 mb-4 text-center">
+                     <span class="flaticon-piggy-bank d-block mb-3 display-3 text-secondary"></span>
+                     <h3 class="text-primary h4 mb-2">Make Donation</h3>
+                     <p>Support Us</p>
+                  </div>
+                  <div class="col-md-6 col-lg-4 mb-4 text-center">
+                     <span class="flaticon-donation d-block mb-3 display-3 text-secondary"></span>
+                     <h3 class="text-primary h4 mb-2">Help &amp; Love</h3>
+                     <p>Change a Life</p>
+                  </div>
+                  <!-- <div class="col-md-6 col-lg-4 mb-4 text-center">
+                     <span class="flaticon-dollar d-block mb-3 display-3 text-secondary"></span>
+                     <h3 class="text-primary h4 mb-2">Give To The Needy</h3>
+                     <p>Praesentium magnam pariatur quae necessitatibus eligendi voluptate ducimus.</p>
+                  </div> -->
+                  <div class="col-md-6 col-lg-4 mb-4 text-center">
+                     <span class="flaticon-unity d-block mb-3 display-3 text-secondary"></span>
+                     <h3 class="text-primary h4 mb-2">Membership</h3>
+                     <p>Help Us Make a Difference</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+   
+         <div class="site-section bg-light" id="contact-section">
+            <div class="container">
+               <div class="row">
+                  <div class="col-12 text-center mb-5">
+                     <h2 class="text-black section-title text-uppercase">Contact Us</h2>
+                  </div>
+               </div>
+               <div class="row justify-content-center">
+                  <div class="col-lg-6 mb-5">
+                     <form action="#" method="post" name="contact">
+                        <div class="form-group row">
+                           <div class="col-md-6 mb-4 mb-lg-0">
+                              <input type="text" class="form-control" name="first_name" placeholder="First name" required />
+                           </div>
+                           <div class="col-md-6">
+                              <input type="text" class="form-control" name="last_name" placeholder="Last name" required />
+                           </div>
+                        </div>
+                        <div class="form-group row">
+                           <div class="col-md-12">
+                              <input type="tel" class="form-control" name="phone" placeholder="Phone number" required />
+                           </div>
+                        </div>
+                        <div class="form-group row">
+                           <div class="col-md-12">
+                              <textarea class="form-control" name="message" placeholder="Your message" cols="30" rows="3" required></textarea>
+                           </div>
+                        </div>
+                        <div class="form-group row">
+                           <div class="col-md-6 ml-auto">
+                              <input type="submit" class="btn btn-block btn-primary text-white py-3 px-5" value="Send">
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Footer -->
+         <%- include('common/_footer') %>
+
+      </div>
+   </body>
+   <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-database.js"></script>
+   <script src="./js/init.js"></script>
+
+   <%- include('common/_js-imports') %>
+</html>
+

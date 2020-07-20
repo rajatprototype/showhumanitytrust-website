@@ -1,0 +1,115 @@
+
+<%
+   const page_name = "Members";
+%>
+
+<!-- Head content -->
+<%- include('common/_head', { page_name }) %>
+
+   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+      <div class="site-wrap" id="home-section">
+         <div class="site-mobile-menu site-navbar-target">
+            <div class="site-mobile-menu-header">
+               <div class="site-mobile-menu-close mt-3">
+                  <span class="icon-close2 js-menu-toggle"></span>
+               </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+         </div>
+
+         <!-- Header -->
+         <%- include('common/_header', { page_name }) %>
+
+         <div class="site-section" id="team-section">
+            <div class="container">
+               <div class="row mb-5 justify-content-center">
+                  <div class="col-md-7 text-center">
+                     <h2 class="text-black text-uppercase section-title">Our Leadership</h2>
+                     <p>Meet the people behind our achievement</p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                     <div class="block-team-member-1 text-center rounded">
+                        <figure>
+                           <img src="./images/members/SAVAN OK 1 - rounded.jpg" alt="Image" class="img-fluid rounded-circle">
+                        </figure>
+                        <h3 class="font-size-20">Savan</h3>
+                        <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">SAVAN</span>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                     <div class="block-team-member-1 text-center rounded">
+                        <figure>
+                           <img src="./images/members/TARANG  OK 1 - rounded.jpg" alt="Image" class="img-fluid rounded-circle">
+                        </figure>
+                        <h3 class="font-size-20">Tarang</h3>
+                        <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">TARANG</span>
+                        <!-- <p class="px-3 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quidem, laudantium</p>
+                        <div class="block-social-1">
+                           <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-facebook"></span></a>
+                           <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-twitter"></span></a>
+                           <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-instagram"></span></a>
+                        </div> -->
+                     </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                     <div class="block-team-member-1 text-center rounded">
+                        <figure>
+                           <img src="./images/members/02 YUTIK = 02 - rounded.jpg" alt="Image" class="img-fluid rounded-circle">
+                        </figure>
+                        <h3 class="font-size-20">Yutik</h3>
+                        <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">Yutik</span>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="400">
+                     <div class="block-team-member-1 text-center rounded">
+                        <figure>
+                           <img src="./images/members/03 JIMIT  = 03  - rounded.JPEG" alt="Image" class="img-fluid rounded-circle">
+                        </figure>
+                        <h3 class="font-size-20">Jimit</h3>
+                        <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">JIMIT</span>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="500">
+                     <div class="block-team-member-1 text-center rounded">
+                        <figure>
+                           <img src="./images/members/BHAUMIK = 04 - rounded.jpg" alt="Image" class="img-fluid rounded-circle">
+                        </figure>
+                        <h3 class="font-size-20">Bhaumik</h3>
+                        <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">BHAUMIK</span>
+                     </div>
+                  </div>
+         
+                  <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="600">
+                     <div class="block-team-member-1 text-center rounded">
+                        <figure>
+                           <img src="./images/members/DHRUV = 05 - rounded.jpg" alt="Image" class="img-fluid rounded-circle">
+                        </figure>
+                        <h3 class="font-size-20">Dhruv</h3>
+                        <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">DHRUV</span>
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="700">
+                     <div class="block-team-member-1 text-center rounded">
+                        <figure>
+                           <img src="./images/members/HARSH = 07 - rounded.jpg" alt="Image" class="img-fluid rounded-circle">
+                        </figure>
+                        <h3 class="font-size-20">Harsh</h3>
+                        <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">HARSH</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Footer -->
+         <%- include('common/_footer') %>
+      
+      </div>
+   </body>
+   
+   <%- include('common/_js-imports') %>
+
+</html>

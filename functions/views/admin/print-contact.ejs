@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Print Preview | Show Humanity Trust</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/admin/plain.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/logo/main-no-border.png" alt="Show Humanity Trust" width="55px" height="55px" />
+        </div>
+        <h1 class="title">Show Humanity Trust</h1>
+    </header>
+    
+    <main>
+        <h2><%= data.first_name + ' ' + data.last_name %></h2>
+        <div class="date">
+            <small class="text-blur"><%= new Date(data.timestamp).toLocaleDateString() %></small>
+        </div>
+        <p><strong>First name: </strong><span><%= data.first_name %></span></p>
+        <p><strong>Last name: </strong><span><%= data.last_name %></span></p>
+        <p><strong>Phone: </strong><span><%= data.phone %></span></p>
+        <p><strong>Message: </strong><span><%= data.message %></span></p>
+    </main>
+</body>
+</html>

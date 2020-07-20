@@ -1,0 +1,30 @@
+<%
+    const links = [
+        { name: "Home", url: '/' },
+        { name: "Members", url: '/members' },
+        { name: "Gallary", url: '/gallary' },
+        { name: "Events", url: '/events' },
+        { name: "Membership", url: '/membership' },
+        { name: "Donate", url: '/donate' },
+        { name: "Contact", url: '/#contact-section' }
+    ]
+%>
+
+<header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+    <div class="container">
+        <div class="row align-items-center position-relative">
+          <div class="site-logo">
+             <img src="/images/logo/main-no-border.png" alt="Show Humanity Trust" />
+             <a class="site-title" href="/#home-section"><span class="text-primary">Show Humanity Trust</a>
+          </div>
+          <nav class="site-navigation text-center ml-auto" role="navigation">
+            <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                <% links.forEach((link) => { %>
+                    <li><a href="<%= link.url %>" class="<%= (link.name === page_name)? 'nav-link active': 'nav-link' %>"><%= link.name %></a></li>
+                <%  }) %>
+            </ul>
+          </nav>
+          <div class="toggle-button d-inline-block d-lg-none"><a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+       </div>
+    </div>
+</header>

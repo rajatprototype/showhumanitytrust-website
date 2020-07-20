@@ -1,0 +1,110 @@
+
+<%
+   const page_name = "Events";
+%>
+
+<!-- Head content -->
+<%- include('common/_head', { page_name }) %>
+
+   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+      <div class="site-wrap" id="home-section">
+         <div class="site-mobile-menu site-navbar-target">
+            <div class="site-mobile-menu-header">
+               <div class="site-mobile-menu-close mt-3">
+                  <span class="icon-close2 js-menu-toggle"></span>
+               </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+         </div>
+         
+         <!-- Header -->
+         <%- include('common/_header', { page_name }) %>
+
+         <div class="site-section" id="event-section">
+            <div class="container">
+               <div class="row justify-content-center">
+                  <div class="col-7 text-center mb-5 text-center">
+                     <h2 class="text-black text-uppercase section-title">Events</h2>
+                     <p>We organized</p>
+                  </div>
+               </div>
+
+               <!-- Events -->
+               <div class="row">
+
+                  <% data.forEach((event, index) => { %>
+                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="<%= index * 100 %>">
+                        <div>
+                           <a class="mb-4 d-block">
+                              <img 
+                                 src="<%= event.url %>" 
+                                 title="<%= event.title %>" 
+                                 alt="<%= event.title %>" 
+                                 class="img-fluid rounded" />
+                           </a>
+                           <h2><a><%= event.title %></a></h2>
+                           <p class="text-muted mb-3 text-uppercase small"><span class="mr-2"><%= event.date %></span></p>
+                           <p><%= event.about %></p>
+                        </div>
+                     </div>
+                  <% }) %>
+
+                  <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                     <div>
+                        <a class="mb-4 d-block">
+                           <img 
+                              src="./images/project-21/photos/1.jpg" 
+                              alt="Bank of sanitary pad" 
+                              class="img-fluid rounded" />
+                        </a>
+                        <h2><a>Bank of sanitary pad</a></h2>
+                        <p class="text-muted mb-3 text-uppercase small"><span class="mr-2">December 5, 2019</span></p>
+                        <p>
+                           Show humanity trust inaugurated foundation of installation, bank sanitary pad.
+                           An initiative by &#8478; savan s. patel founder president at girls room in Shrimati T.S.R commerce college, patan
+                        </p>
+                        <p>
+                           1<sup>st</sup> time in Gujarat, for providing and distributing sanitary pads to woman's in need.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                     <div>
+                        <a class="mb-4 d-block">
+                           <img 
+                              src="./images/project-13/photos/6.jpg" 
+                              alt="Celebrate founder birthday" 
+                              class="img-fluid rounded" />
+                        </a>
+                        <h2><a>Celebrate founder birthday</a></h2>
+                        <p class="text-muted mb-3 text-uppercase small"><span class="mr-2">March 8, 2019</span></p>
+                        <p>We are organised drive of 2<sup>nd</sup> Blood-donation camp, our founder president Shree Savan patel's birthday at his home.</p>
+                        <p>In this camp we are collected 51 bottle of blood.</p>
+                     </div>
+                  </div>
+                  <div class="mt-4 col-lg-12" data-aos="fade-up" data-aos-delay="300">
+                     <div>
+                        <h2><a>Our 3<sup>rd</sup> Blood donation camp</a></h2>
+                        <p class="text-muted mb-3 text-uppercase small"><span class="mr-2">December 12, 2019</span></p>
+                        <p>
+                           The drive of 3<sup>rd</sup> blood donation camp was jointly organized by Shrimari T.S.R Commerce college, patan and Show Humanity Trust in collabration of S.K. blood bank.
+                        </p>
+                        <p>
+                           Total 55 bottles of blood were donated by students, guests and trust members.
+                        </p>
+                        <p>Show Humanity Trust gave attractive gift to blood doners.</p>
+                     </div>
+                  </div> -->
+               </div>
+            </div>
+         </div>
+
+         <!-- Footer -->
+         <%- include('common/_footer') %>
+
+      </div>
+   </body>
+   
+   <%- include('common/_js-imports') %>
+   
+</html>
